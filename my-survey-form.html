@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* body{
+     background-color: hsl(197, 96%, 47%);
+     font-family:'Times New Roman', Times, serif;
+     .Box-body:last-of-type {
+     margin-bottom: -1px;
+     border-bottom-right-radius: 6px;
+     border-bottom-left-radius: 6px;
+    } */
+    body {
+        background-color: hsl(197, 96%, 47%);
+        padding: 0 10px;
+    }
+
+    .blob-wrapper { 
+     overflow-x: auto;
+     overflow-y: hidden;
+    }
+    
+    .Box-body {
+     padding: 16px;
+     border-bottom: 1px solid var(--color-border-primary);
+    } 
+
+    .formBg {
+        padding: 0 30px;  
+        text-align: center;
+    }
+ 
+
+    .formContainer {
+        background-color: #ffffff;
+        height: 100vh;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .formControl {
+        padding: 6px;
+    }
+    td {
+        width: 40%;
+    }
+    
+    .right{
+        text-align: right;
+        margin-right: 10px;
+    }
+    .left{
+        text-align: left;
+    }
+
+    </style>
+    </head>
+    <body>
+        
+            <div class="formBg">
+                <h2>Survey Form</h2>
+                <div class="formContainer">
+                    <p>Let us know how we can improve freeCodeCamp</p>
+                    <form>
+                        <table>
+                       <tr>  <td class="right"> <label for="name"> *Name</label></td>
+                         <td class="left"> <input type="text" name="Name" placeholder="enter your name"></td>
+                        </tr>
+                        
+                            <tr><td class="right"><label for="email" > *Email</label></td> 
+                            <td class="left"><input type="text" name="email"  placeholder="enter your email"></td>
+                        </tr>
+                          
+
+                            <tr><td class="right"> <label for="age"> *Age</label></td> 
+                            <td class="left"><input type="counter" name="Age"  placeholder="age"></td>
+                        </tr>
+                          
+                            <tr><td class="right">  <label for="role">Which option best describes your current role?</label></td>
+                             <td class="left" > <select name="role" id="">
+                                  <option value="">Select your role</option>
+                                  <option value="teacher">Teacher</option>
+                                  <option value="student">Student</option>
+                                </select>
+                            </td></tr>
+                              
+                                  <tr><td class="right">  <label for="gender">How likely is that you would recommend freeCodecamp to a fried? :</label></td>
+                                  <td class="left" >  <input type="radio" id="male" name="gender" value="definitely">
+                                    <label for="definitely">Definitely</label><br>
+                                    <input type="radio" id="maybe" name="gender" value="maybe">
+                                    <label for="female">Maybe</label><br>
+                                    <input type="radio" id="other" name="gender" value="other">
+                                    <label for="other">Other</label>
+                                </td>
+                                </tr>
+
+                               
+
+                                  <tr><td class="right">  <label for="role">What do you like most in FCC?</label></td>
+                                    <td class="left"> <select an option="role" id="">
+                                         <option value="">Select your role</option>
+                                         
+                                       </select>
+                                   </td></tr>
+
+                                   <tr><td class="right">  <label for="gender"> Things that should be improved in the feature (check all that apply):</label></td>
+                                    <td class="left"><input type="checkbox" id="vehicle1" name="vehicle1" value="front end projects">
+                                    <label for="vehicle1"> Front end projects</label><br>
+                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="back end projects">
+                                    <label for="vehicle2"> Back end projects</label><br>
+                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="data visualization">
+                                    <label for="vehicle3"> Data visualization</label><br><br>
+                                  </td>
+                                  </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
